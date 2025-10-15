@@ -1,0 +1,23 @@
+public class principal2 {
+    public static void main(String[] args) {
+        // Producto por defecto
+        Producto p1 = new Producto();
+        System.out.println("Producto 1 ");
+        System.out.println(p1);
+
+        // Producto con parámetros
+        Producto p2 = new Producto("A101", "Audífonos Bluetooth", 2, 150000);
+        System.out.println(" Producto 2 (inicial) ");
+        System.out.println(p2);
+
+        // Aplicar descuento
+        p2.aplicarDescuento(10);
+        System.out.println("Después de aplicar 10% de descuento:");
+        System.out.println(p2);
+
+        // Incrementar cantidad
+        p2.incrementarCantidad(3);
+        System.out.println("Después de incrementar cantidad en 3 unidades:");
+        System.out.println(p2);
+    }
+}
