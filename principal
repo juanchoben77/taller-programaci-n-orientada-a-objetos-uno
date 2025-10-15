@@ -1,0 +1,26 @@
+public class Principal {
+    public static void main(String[] args) {
+        // Crear una cuenta válida
+        CuentaBancaria cuenta1 = new CuentaBancaria("Juan Pérez", "123456", 1000.0);
+
+        // Crear una cuenta inválida (para probar validaciones)
+        CuentaBancaria cuenta2 = new CuentaBancaria("", "123", -500);
+
+        // Mostrar información inicial
+        System.out.println("Cuenta válida ");
+        System.out.println(cuenta1);
+
+        System.out.println("\n=== Cuenta inválida (valores corregidos) ===");
+        System.out.println(cuenta2);
+
+        // Operaciones con cuenta válida
+        System.out.println("Operaciones con cuenta válida ");
+        cuenta1.depositar(500);
+        cuenta1.retirar(300);
+        cuenta1.retirar(1500); // saldo insuficiente
+
+        // Mostrar saldo final
+        System.out.println("Saldo final:" + cuenta1);
+    }
+}
+
