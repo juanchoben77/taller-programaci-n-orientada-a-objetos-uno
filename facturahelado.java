@@ -1,5 +1,5 @@
 public class facturahelado {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         // 1. Creamos un objeto de la clase hija (Helado)
         helado mihelado = new helado("Helado de Vainilla Clásico", 3.50, "Vainilla", "cono");
 

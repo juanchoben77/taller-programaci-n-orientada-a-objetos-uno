@@ -1,6 +1,7 @@
 
 
 public class helado extends producto{
+     public static void main(String[] args)
  {
 
  }
